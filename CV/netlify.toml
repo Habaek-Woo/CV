@@ -1,0 +1,19 @@
+# Netlify — publish the site folder as-is (no build step)
+# https://docs.netlify.com/configure-builds/file-based-configuration/
+
+[build]
+  publish = "."
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "camera=(), microphone=(), geolocation=(), payment=(), interest-cohort=()"
+    X-DNS-Prefetch-Control = "off"
+    Cross-Origin-Opener-Policy = "same-origin"
+    # CSP: self-hosted assets + FormSubmit POST + GitHub raw images for the networking project card.
+    # If the console reports violations after deploy, loosen img-src or form-action as needed.
+    Content-Security-Policy = "default-src 'self'; base-uri 'self'; form-action https://formsubmit.co; script-src 'self'; style-src 'self'; img-src 'self' https://raw.githubusercontent.com data:; font-src 'self'; connect-src 'self'; frame-ancestors 'none'; object-src 'none'; upgrade-insecure-requests"
+

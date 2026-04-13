@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="description" content="Computer Engineering Technology student portfolio — embedded systems, IoT, AI integration, and software development." />
+  <meta name="format-detection" content="telephone=no" />
+  <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
+  <meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=(), payment=(), interest-cohort=()" />
+  <!-- Security: This site is static HTML/CSS/JS — there is no server database, so SQL injection does not apply. The contact form POSTs to FormSubmit only (HTTPS). No API keys or secrets belong in this repo. -->
+  <!-- Full CSP is best set as an HTTP header on your host (Netlify/Vercel/Cloudflare). A strict meta-CSP here would block FormSubmit’s captcha (Google). -->
+  <title>John Renzo G. Dacer | Computer Engineering Technology Student</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" type="image/png" href="Images/cvIcon.png" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="top">
+    <nav class="nav" aria-label="Primary">
+      <a class="nav__brand" href="#top">John Renzo G. Dacer<span class="nav__dot">.</span></a>
+      <button type="button" class="nav__toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Open menu">
+        <span class="nav__toggle-bar"></span>
+        <span class="nav__toggle-bar"></span>
+        <span class="nav__toggle-bar"></span>
+      </button>
+      <ul class="nav__list" id="nav-menu">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="nav__actions">
+        <button type="button" class="theme-toggle js-theme-toggle" id="theme-toggle" aria-pressed="false" aria-label="Switch to light mode" title="Appearance">
+          <span class="theme-toggle__icon theme-toggle__icon--sun" aria-hidden="true">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          </span>
+          <span class="theme-toggle__icon theme-toggle__icon--moon" aria-hidden="true">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          </span>
+          <span class="theme-toggle__label" data-theme-label>Light</span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="hero__grid" aria-hidden="true"></div>
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <p class="hero__eyebrow reveal" data-reveal>4th Year · Computer Engineering Technology</p>
+          <h1 id="hero-heading" class="hero__title reveal" data-reveal>
+            <span class="hero__name">John Renzo G. Dacer</span>
+            <span class="hero__role">Computer Engineering Technology Student</span>
+          </h1>
+          <p class="hero__tagline reveal" data-reveal>
+            Building intelligent systems through hardware and software integration.
+          </p>
+          <div class="hero__cta reveal" data-reveal>
+            <a class="btn btn--primary" href="#projects">View Projects</a>
+            <a class="btn btn--ghost" href="assets/resume.pdf" download>Download Resume</a>
+            <button type="button" class="btn btn--ghost btn--theme-hero js-theme-toggle" id="theme-toggle-hero" aria-pressed="false" aria-label="Switch to light mode" title="Dark or light appearance">
+              <span class="btn--theme-hero__icons" aria-hidden="true">
+                <svg class="btn--theme-hero__sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2"/></svg>
+                <svg class="btn--theme-hero__moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+              </span>
+              <span data-theme-label>Light mode</span>
+            </button>
+          </div>
+        </div>
+        <figure class="hero__photo-col reveal" data-reveal>
+          <div class="hero__photo-frame profile-photo-swap" tabindex="0" aria-label="Portrait: hover, focus, or tap to swap to a casual photo">
+            <img class="profile-photo-swap__img profile-photo-swap__img--formal" src="Images/Formal.jpg" width="640" height="640" alt="John Renzo G. Dacer, formal portrait" decoding="async" loading="eager" />
+            <img class="profile-photo-swap__img profile-photo-swap__img--casual" src="Images/NotFormal.JPG" width="640" height="640" alt="" decoding="async" loading="lazy" aria-hidden="true" />
+          </div>
+          <figcaption class="hero__photo-hint">
+            <span class="hero__photo-hint__desktop">Hover or keyboard focus for another look</span>
+            <span class="hero__photo-hint__touch">Tap the photo to swap formal / casual</span>
+          </figcaption>
+        </figure>
+      </div>
+      <div class="hero__scroll" aria-hidden="true">
+        <span>Scroll</span>
+        <span class="hero__scroll-line"></span>
+      </div>
+    </section>
+
+    <section class="section about" id="about" aria-labelledby="about-heading">
+      <div class="container">
+        <header class="section__head reveal" data-reveal>
+          <span class="section__label">01</span>
+          <h2 id="about-heading" class="section__title">About Me</h2>
+        </header>
+        <div class="about__grid">
+          <div class="about__text reveal" data-reveal>
+            <p>
+              I am a 4th Year <strong>Computer Engineering Technology (CpET)</strong> student specializing in intelligent systems that integrate hardware and software. My work focuses on developing practical, real-world solutions using embedded systems, IoT, and machine learning.
+            </p>
+            <p>
+              For my thesis, I developed an <strong>AI-powered vending machine</strong> for personal hygiene products, combining automation, sensor integration, and machine learning to deliver a smarter and more efficient user experience. This project reflects my ability to design and implement end-to-end systems—from hardware interfacing to intelligent decision-making.
+            </p>
+            <p>
+              During my <strong>On-the-Job Training at Regcris Marketing Incorporations</strong>, I gained hands-on experience in technical operations, troubleshooting, and working within a professional environment, strengthening both my technical and collaborative skills.
+            </p>
+            <p class="about__goal">
+              I am currently seeking opportunities where I can contribute to innovative engineering projects, particularly in embedded systems, AI integration, and smart technologies.
+            </p>
+          </div>
+          <aside class="about__aside reveal" data-reveal>
+            <h3 class="about__aside-title">Interests</h3>
+            <ul class="chip-list">
+              <li>Network Engineering</li>
+              <li>Cybersecurity</li>
+              <li>Embedded systems</li>
+              <li>IoT</li>
+              <li>Robotics &amp; automation</li>
+              <li>Machine learning</li>
+              <li>Software development</li>
+            </ul>
+            <h3 class="about__aside-title">How I work</h3>
+            <p class="about__aside-text">
+              Problem-solving first, hands-on prototyping, and clear documentation—bridging circuits, code, and real users.
+            </p>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="section projects" id="projects" aria-labelledby="projects-heading">
+      <div class="container">
+        <header class="section__head reveal" data-reveal>
+          <span class="section__label">02</span>
+          <h2 id="projects-heading" class="section__title">Projects</h2>
+          <p class="section__intro">Thesis work, networking labs, and engineering projects.</p>
+        </header>
+        <div class="projects__grid">
+
+          <article class="project-card reveal" data-reveal>
+            <div class="project-card__media project-card__media--vending" role="img" aria-label="Abstract visualization: smart vending system"></div>
+            <div class="project-card__body">
+              <h3 class="project-card__title">Thesis: Develoment of Personal Vending Machine with Machine Learning</h3>
+              <p class="project-card__desc">
+                <strong>Problem:</strong> Static vending flows lack personalization and stock insight.<br />
+                <strong>Solution:</strong> Thesis system combining sensors, automation, and ML for smarter dispensing and decision support. 
+                Also added Prediction Analysis using RainForest AI to predict the stock of the vending machine.<br />
+                <strong>Outcome:</strong> End-to-end prototype demonstrating hardware–software integration and intelligent behavior.
+              </p>
+              <ul class="project-card__tags">
+                <li>Python</li>
+                <li>TensorFlow</li>
+                <li>Arduino / MCU</li>
+                <li>Sensors</li>
+                <li>RainForest AI</li>
+              </ul>
+              <div class="project-card__links">
+                <a href="https://github.com/calixtaaa/Thesis" target="_blank" rel="noopener noreferrer" referrerpolicy="strict-origin-when-cross-origin">GitHub</a>
+                <span class="project-card__note">Thesis / capstone</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-reveal>
+            <div
+              class="project-card__media project-card__media--preview project-card__media--network-swap js-network-swap"
+              data-label-hover="Packet Tracer preview: hover for alternate diagram"
+              data-label-tap="Packet Tracer preview: tap to swap topology image"
+            >
+              <img
+                class="project-card__net-img project-card__net-img--a"
+                src="https://raw.githubusercontent.com/Habaek-Woo/OSPF-EIGRP-RRV2-/main/images/Topology.jpg"
+                alt="Enterprise network topology in Cisco Packet Tracer"
+                width="960"
+                height="540"
+                loading="lazy"
+                decoding="async"
+              />
+              <img
+                class="project-card__net-img project-card__net-img--b"
+                src="https://raw.githubusercontent.com/Habaek-Woo/OSPF-EIGRP-RRV2-/main/images/EIGRP%2CRRV2%2COSPF.png"
+                alt=""
+                width="960"
+                height="540"
+                loading="lazy"
+                decoding="async"
+                aria-hidden="true"
+              />
+            </div>
+            <div class="project-card__body">
+              <p class="project-card__swap-hint">Tap the preview image to see the routing-protocols diagram.</p>
+              <h3 class="project-card__title">OSPF, EIGRP &amp; RIPv2 — Packet Tracer Enterprise Topology</h3>
+              <p class="project-card__desc">
+                <strong>Problem:</strong> School project requiring a defended multi-protocol enterprise design with clear routing boundaries and testable connectivity.<br />
+                <strong>Solution:</strong> Cisco Packet Tracer topology with VLAN-style segmentation, dynamic routing (OSPF, EIGRP, RIPv2), and documentation for verification (ping, DHCP, <code>show ip route</code>).<br />
+                <strong>Outcome:</strong> Reproducible lab with <code>.pkt</code> file, IP tables, and topology screenshots for presentation and defense.
+              </p>
+              <ul class="project-card__tags">
+                <li>Packet Tracer</li>
+                <li>OSPF</li>
+                <li>EIGRP</li>
+                <li>RIPv2</li>
+                <li>VLANs / switching</li>
+              </ul>
+              <div class="project-card__links">
+                <a href="https://github.com/Habaek-Woo/OSPF-EIGRP-RRV2-" target="_blank" rel="noopener noreferrer" referrerpolicy="strict-origin-when-cross-origin">GitHub</a>
+                <span class="project-card__note">Networking · school project</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="section skills" id="skills" aria-labelledby="skills-heading">
+      <div class="container">
+        <header class="section__head reveal" data-reveal>
+          <span class="section__label">03</span>
+          <h2 id="skills-heading" class="section__title">Technical Skills</h2>
+        </header>
+        <div class="skills__grid">
+
+          <div class="skill-block reveal" data-reveal>
+            <div class="skill-block__head">
+              <span class="skill-block__icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+              </span>
+              <h3>Programming</h3>
+            </div>
+            <ul class="skill-bars">
+              <li>
+                <span class="skill-bars__label">C / C++ <small>Embedded</small></span>
+                <div class="skill-bars__track" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100"><span class="skill-bars__fill" style="--p:88%"></span></div>
+              </li>
+              <li>
+                <span class="skill-bars__label">Python <small>ML, data</small></span>
+                <div class="skill-bars__track" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"><span class="skill-bars__fill" style="--p:90%"></span></div>
+              </li>
+              <li>
+                <span class="skill-bars__label">JavaScript <small>Web, fundamentals</small></span>
+                <div class="skill-bars__track" role="progressbar" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100"><span class="skill-bars__fill" style="--p:78%"></span></div>
+              </li>
+            </ul>
+            <div class="badge-grid skill-block__badges-below">
+              <span class="badge">Python Essential 1</span>
+              <span class="badge">JavaScript Essential 1</span>
+            </div>
+          </div>
+
+          <div class="skill-block reveal" data-reveal>
+            <div class="skill-block__head">
+              <span class="skill-block__icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M9 9h6v6H9z"/></svg>
+              </span>
+              <h3>Hardware</h3>
+            </div>
+            <ul class="skill-bars">
+              <li>
+                <span class="skill-bars__label">Microcontrollers</span>
+                <div class="skill-bars__track" role="progressbar" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100"><span class="skill-bars__fill" style="--p:92%"></span></div>
+              </li>
+              <li>
+                <span class="skill-bars__label">Circuit design &amp; prototyping</span>
+                <div class="skill-bars__track" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"><span class="skill-bars__fill" style="--p:85%"></span></div>
+              </li>
+              <li>
+                <span class="skill-bars__label">PCB / layout</span>
+                <div class="skill-bars__track" role="progressbar" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100"><span class="skill-bars__fill" style="--p:78%"></span></div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="skill-block reveal" data-reveal>
+            <div class="skill-block__head">
+              <span class="skill-block__icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M12 8v4M12 16h.01"/></svg>
+              </span>
+              <h3>IT support, networking &amp; security</h3>
+            </div>
+            <ul class="skill-bars">
+              <li>
+                <span class="skill-bars__label">Networking <small>Cisco, fundamentals</small></span>
+                <div class="skill-bars__track" role="progressbar" aria-valuenow="86" aria-valuemin="0" aria-valuemax="100"><span class="skill-bars__fill" style="--p:86%"></span></div>
+              </li>
+              <li>
+                <span class="skill-bars__label">IT support &amp; systems <small>Help desk, hardware</small></span>
+                <div class="skill-bars__track" role="progressbar" aria-valuenow="84" aria-valuemin="0" aria-valuemax="100"><span class="skill-bars__fill" style="--p:84%"></span></div>
+              </li>
+              <li>
+                <span class="skill-bars__label">Cybersecurity awareness <small>Foundations</small></span>
+                <div class="skill-bars__track" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"><span class="skill-bars__fill" style="--p:75%"></span></div>
+              </li>
+            </ul>
+            <div class="badge-grid skill-block__badges-below">
+              <span class="badge">Google IT Support Professional</span>
+              <span class="badge">Google Cybersecurity</span>
+              <span class="badge">CCST — Network Basics</span>
+              <span class="badge">CCST — Network Essentials</span>
+              <span class="badge">JavaScript Essential 1</span>
+              <span class="badge">Cisco networking devices &amp; initial configuration</span>
+              <span class="badge">NCII — Computer Systems Servicing</span>
+            </div>
+          </div>
+
+          <div class="skill-block reveal" data-reveal>
+            <div class="skill-block__head">
+              <span class="skill-block__icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41"/></svg>
+              </span>
+              <h3>ML &amp; AI</h3>
+            </div>
+            <div class="badge-grid">
+              <span class="badge">Model training</span>
+              <span class="badge">Evaluation</span>
+              <span class="badge">Data analysis</span>
+              <span class="badge">Pattern recognition</span>
+              <span class="badge">Computer vision</span>
+            </div>
+          </div>
+
+          <div class="skill-block reveal" data-reveal>
+            <div class="skill-block__head">
+              <span class="skill-block__icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+              </span>
+              <h3>Tools</h3>
+            </div>
+            <div class="badge-grid">
+              <span class="badge">Git / GitHub</span>
+              <span class="badge">TensorFlow</span>
+              <span class="badge">Scikit-learn</span>
+              <span class="badge">OpenCV</span>
+              <span class="badge">MATLAB</span>
+              <span class="badge">Proteus</span>
+              <span class="badge">AutoCAD</span>
+              <span class="badge">Firebase</span>
+              <span class="badge">Packet Tracer</span>
+            </div>
+          </div>
+
+          <div class="skill-block skill-block--wide reveal" data-reveal>
+            <div class="skill-block__head">
+              <span class="skill-block__icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              </span>
+              <h3>Embedded, leadership &amp; strengths</h3>
+            </div>
+            <div class="badge-grid">
+              <span class="badge">Arduino &amp; Raspberry Pi</span>
+              <span class="badge">Sensors &amp; actuators</span>
+              <span class="badge">Systems integration</span>
+              <span class="badge">VP — ICPEP.SE TUPM</span>
+              <span class="badge">Troubleshooting</span>
+              <span class="badge">Technical documentation</span>
+              <span class="badge">Team collaboration</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="section experience" id="experience" aria-labelledby="experience-heading">
+      <div class="container">
+        <header class="section__head reveal" data-reveal>
+          <span class="section__label">04</span>
+          <h2 id="experience-heading" class="section__title">Experience &amp; Training</h2>
+        </header>
+        <div class="timeline">
+          <article class="timeline__item reveal" data-reveal>
+            <div class="timeline__marker" aria-hidden="true"></div>
+            <div class="timeline__card">
+              <h3>On-the-Job Training — Regcris Marketing Incorporations</h3>
+              <p class="timeline__meta">OJT · Technical operations &amp; support</p>
+              <p>
+                Completed OJT with practical experience in technical support, system operations, and workplace collaboration.
+              </p>
+              <ul class="timeline__list">
+                <li>Assisted in troubleshooting hardware and technical issues, improving reliability and minimizing downtime</li>
+                <li>Supported day-to-day technical operations and equipment handling</li>
+                <li>Applied problem-solving under time constraints in real scenarios</li>
+                <li>Collaborated with the team for efficient workflow and task completion</li>
+                <li>Demonstrated adaptability, professionalism, and strong work ethic</li>
+              </ul>
+              <p class="timeline__takeaways"><strong>Key takeaways:</strong> Real-world troubleshooting, professional communication and teamwork, time management and prioritization.</p>
+            </div>
+          </article>
+          <article class="timeline__item reveal" data-reveal>
+            <div class="timeline__marker" aria-hidden="true"></div>
+            <div class="timeline__card">
+              <h3>Academic leadership &amp; projects</h3>
+              <p class="timeline__meta">CpET · TUP Manila · Student organizations</p>
+              <p>
+                <strong>Vice President</strong>, Institute of Computer Engineers of the Philippines Student Edition — TUP Manila (<abbr title="Institute of Computer Engineers of the Philippines Student Edition">ICPEP.SE</abbr> – TUPM). Supporting chapter programs, member engagement, and initiatives that bridge academic learning with professional practice.
+              </p>
+              <p>
+                Led and contributed to team labs in embedded design, IoT, and capstone research—translating requirements into working prototypes and documentation.
+              </p>
+            </div>
+          </article>
+          <article class="timeline__item reveal" data-reveal>
+            <div class="timeline__marker" aria-hidden="true"></div>
+            <div class="timeline__card">
+              <h3>Certifications &amp; workshops</h3>
+              <p class="timeline__meta">IT support · Networking · Security · Web · National certification</p>
+              <p class="cert-intro">Selected credentials and training completed:</p>
+              <ul class="cert-list">
+                <li>Google IT Support Professional Certificate</li>
+                <li>Cisco Certified Support Technician — Network Basics</li>
+                <li>Cisco Certified Support Technician — Network Essentials</li>
+                <li>JavaScript Essential 1</li>
+                <li>Cisco Networking Devices and Initial Configuration</li>
+                <li>Google Cybersecurity</li>
+                <li>NCII — Computer Systems Servicing</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section resume-block" id="resume" aria-labelledby="resume-heading">
+      <div class="container">
+        <header class="section__head reveal" data-reveal>
+          <span class="section__label">05</span>
+          <h2 id="resume-heading" class="section__title">Resume</h2>
+        </header>
+        <div class="resume-panel reveal" data-reveal>
+          <div class="resume-panel__photo">
+            <div class="resume-panel__photo-frame profile-photo-swap" tabindex="0" aria-label="Portrait: hover, focus, or tap to swap to a casual photo">
+              <img class="profile-photo-swap__img profile-photo-swap__img--formal" src="Images/Formal.jpg" width="320" height="320" alt="John Renzo G. Dacer, formal portrait" decoding="async" loading="lazy" />
+              <img class="profile-photo-swap__img profile-photo-swap__img--casual" src="Images/NotFormal.JPG" width="320" height="320" alt="" decoding="async" loading="lazy" aria-hidden="true" />
+            </div>
+            <p class="resume__photo-hint">Tap to swap formal / casual photo</p>
+          </div>
+          <div class="resume-panel__text">
+            <h3>Quick summary</h3>
+            <p>
+              4th Year Computer Engineering Technology student at TUP Manila with hands-on experience across <strong>embedded systems</strong>, <strong>networking</strong>, and <strong>IT support</strong>. Thesis work on an AI-powered vending system; OJT in technical operations at Regcris Marketing Incorporations. <strong>Vice President, ICPEP.SE – TUPM.</strong> Credentialed in Google IT Support, Cisco networking (CCST), cybersecurity foundations, JavaScript essentials, and <abbr title="National Certificate II">NCII</abbr> Computer Systems Servicing.
+            </p>
+            <ul class="resume-panel__bullets">
+              <li><strong>Engineering &amp; software:</strong> C/C++ (embedded), Python (ML/data), JavaScript fundamentals, microcontrollers, sensors, circuits, system integration</li>
+              <li><strong>IT &amp; infrastructure:</strong> Help-desk style support, network fundamentals, device configuration, troubleshooting, CSS/NCII servicing skills</li>
+              <li><strong>Tools &amp; platforms:</strong> Git/GitHub, TensorFlow, OpenCV, MATLAB, Proteus, AutoCAD, Firebase, Packet Tracer</li>
+            </ul>
+          </div>
+          <div class="resume-panel__action">
+            <a class="btn btn--primary btn--lg" href="assets/resume.pdf" download>Download CV (PDF)</a>
+            <!--will remove this later<p class="resume-panel__hint">PDF is served from <code>assets/resume.pdf</code>. Replace that file when you update your CV.</p>-->
+            <p class="resume-panel__hint">I will update the resume as soon as possible.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact" aria-labelledby="contact-heading">
+      <div class="container">
+        <header class="section__head reveal" data-reveal>
+          <span class="section__label">06</span>
+          <h2 id="contact-heading" class="section__title">Contact</h2>
+          <p class="section__intro">Open to internships and entry-level engineering roles.</p>
+        </header>
+        <div class="contact__grid">
+          <form
+            class="contact__form reveal"
+            data-reveal
+            id="contact-form"
+            action="https://formsubmit.co/el/yicoju"
+            method="post"
+            enctype="application/x-www-form-urlencoded"
+          >
+            <input type="hidden" name="_subject" value="Portfolio contact — John Renzo G. Dacer" />
+            <input type="hidden" name="_next" id="form-submit-next" value="" />
+            <input type="hidden" name="_captcha" value="false" />
+            <input type="text" name="_gotcha" class="form-honey" tabindex="-1" autocomplete="off" aria-hidden="true" title="" />
+            <div class="form-row">
+              <label for="contact-name">Name</label>
+              <input id="contact-name" name="name" type="text" required autocomplete="name" placeholder="Your name" maxlength="120" minlength="2" />
+            </div>
+            <div class="form-row">
+              <label for="contact-email">Email</label>
+              <input id="contact-email" name="email" type="email" required autocomplete="email" placeholder="you@example.com" maxlength="254" inputmode="email" />
+            </div>
+            <div class="form-row">
+              <label for="contact-message">Message</label>
+              <textarea id="contact-message" name="message" rows="5" required placeholder="Tell me about the role or project…" maxlength="5000" minlength="10"></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary" id="contact-submit">Send message</button>
+            <p class="form-note"> I will receive the message and reply to you as soon as possible.</p>
+          </form>
+          <div class="contact__aside reveal" data-reveal>
+            <h3>Direct</h3>
+            <p>
+              <a class="contact__email" href="mailto:dacerjohnrenzo@gmail.com">dacerjohnrenzo@gmail.com</a>
+            </p>
+            <h3>Profiles</h3>
+            <ul class="social-list">
+              <li>
+                <a href="https://github.com/Habaek-Woo" target="_blank" rel="noopener noreferrer" referrerpolicy="strict-origin-when-cross-origin" aria-label="GitHub">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                  GitHub
+                </a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/john-renzo-dacer-398b01371/" target="_blank" rel="noopener noreferrer" referrerpolicy="strict-origin-when-cross-origin" aria-label="LinkedIn">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                  LinkedIn
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <p>© <span id="year"></span> John Renzo G. Dacer · Computer Engineering Technology</p>
+      <a href="#top" class="site-footer__top">Back to top</a>
+      <p>version 1.0.0</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
